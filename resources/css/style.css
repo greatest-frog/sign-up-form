@@ -148,6 +148,7 @@ a {
 }
 
 .error_msg {
+    font-size: 0.8rem;
     color: red;
     position: absolute;
     bottom: -1.7rem;
