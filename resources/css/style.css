@@ -76,7 +76,7 @@ input:focus {
     border: 2px solid var(--blue, #8294a8);
 }
 
-button[type="submit"] {
+button {
     font-size: 1rem;
     font-weight: bold;
     color: #f5f5f5;
@@ -85,6 +85,15 @@ button[type="submit"] {
     height: 3rem;
     border: none;
     border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #394756;
+}
+
+button:focus {
+    border: 3px solid #607388;
+    box-shadow: #1d1d1f 1px;
 }
 
 a {
@@ -130,5 +139,21 @@ a {
 }
 
 .input {
+    position: relative;
     margin-bottom: 2rem;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error_msg {
+    color: red;
+    position: absolute;
+    bottom: -1.7rem;
+    right: auto;
+}
+
+.none-display {
+    display: none;
 }
