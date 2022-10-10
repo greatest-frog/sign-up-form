@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+</head>
+<body>
+    <div class="form-logo">
+        <img src="./resources/images/form-photo.jpg" alt="form-photo">
+        <div class="logo">
+            <img src="./resources/images/frog_logo.jpeg" alt="logo">
+            <h1>FROG</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="text">
+            <p>
+                This is not a real online service! You know you need something like 
+                this in your life to help you realize your deepest dreams.
+            </p>
+            <p>If you feel lost just join us</p>
+        </div>
+        <form method="post">
+            <div class="first-name input">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="firstName" id="first-name">
+            </div>
+            <div class="last-name input">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="lastName" id="last-name">
+            </div>
+            <div class="email input">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="phone input">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="password input error">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="password input error">
+                <label for="password_confirm">CONFIRM PASSWORD</label>
+                <input type="password" name="passwordConfirm" id="password_confirm">
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <div class="login">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

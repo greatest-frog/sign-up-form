@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&family=Noto+Serif+Gujarati&display=swap');
+
+@font-face {
+    font-family: 'Norse';
+    src: url('../fonts/Norse-Bold.eot');
+    src: url('../fonts/Norse-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Norse-Bold.woff2') format('woff2'),
+        url('../fonts/Norse-Bold.woff') format('woff'),
+        url('../fonts/Norse-Bold.ttf') format('truetype'),
+        url('../fonts/Norse-Bold.svg#Norse-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+:root {
+    font-size: 16px;
+    --whitish: #f5f5f5;
+    --dark-gray: #1f1f21;
+    --gray: #bababa;
+    --blue: #506378;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #1d1d1f;
+    background-color: var(--whitish, white);
+    font-family: 'Noto Serif Gujarati', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+}
+
+h1 {
+    font-size: 8rem;
+    font-family: Norse;
+    font-weight: bold;
+}
+
+p {
+    width: 90%;
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20%;
+    margin-bottom: 3rem;
+}
+
+label {
+    font-size: 0.8rem;
+    color: var(--dark-gray, darkgray);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input {
+    font-size: 1rem;
+    width: 15rem;
+    height: 2rem;
+    padding: 0.3rem;
+    border: 1px solid var(--gray, gray);
+    border-radius: 0.3rem;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--blue, #8294a8);
+}
+
+button[type="submit"] {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: var(--blue, #506378);
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.form-logo {
+    position: relative;
+    width: 40%;
+    height: 100vh;
+}
+
+.form-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.logo {
+    color: #300909;
+    background-color: rgba(72, 72, 72, 0.4);
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+
+.content {
+    width: 60%;
+    padding: 5%;
+}
+
+.input {
+    margin-bottom: 2rem;
+}
